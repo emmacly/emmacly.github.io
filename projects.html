@@ -1,1 +1,79 @@
-jkll
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 50px auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 2px;
+            background-color: #333;
+            margin-left: -1px;
+        }
+
+        .event {
+            position: relative;
+            margin: 20px 0;
+        }
+
+        .event::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #333;
+            transform: translate(-50%, -50%);
+        }
+
+        .event-content {
+            margin-left: 20px;
+        }
+
+        .event h3 {
+            margin-top: 0;
+        }
+
+        .event p {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="timeline">
+    <div class="event">
+        <div class="event-content">
+            <h3>Year 1</h3>
+            <p>Event description goes here.</p>
+        </div>
+    </div>
+    <div class="event">
+        <div class="event-content">
+            <h3>Year 2</h3>
+            <p>Another event description.</p>
+        </div>
+    </div>
+    <!-- Add more events as needed -->
+</div>
+
+</body>
+</html>
+
