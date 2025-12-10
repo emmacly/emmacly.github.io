@@ -4076,3 +4076,10 @@ section.wrapper.style5 .inner .scroll-gallery img {
     background: #ffc0cb !important;      /* slightly darker pink on hover */
     color: #333 !important;
 }
+
+/* Keep dropdown visible when hovering over parent or dropdown itself */
+.dropdown:hover .dropdown-content,
+.dropdown-content:hover {
+    display: block !important;
+}
+
