@@ -4042,8 +4042,8 @@ section.wrapper.style5 .inner .scroll-gallery img {
 .dropdown-content {
     display: none !important;
     list-style: none !important;
-    padding: 0 !important;     /* remove all padding */
-    margin: 0 !important;      /* remove all margin */
+    padding: 5px 0 !important;         /* small padding around the box */
+    margin: 0 !important;
     background: none !important;
 }
 
@@ -4054,23 +4054,27 @@ section.wrapper.style5 .inner .scroll-gallery img {
 
 /* Remove spacing from list items */
 .dropdown-content li {
-    margin: 0 !important;      
-    padding: 0 !important;     
+    margin: 3px 0 !important;          /* small gap between boxes */
+    padding: 0 !important;
 }
 
-/* Dropdown links styling */
+/* Dropdown links styling with light pink boxes */
 .dropdown-content li a {
     display: block !important;
-    padding: 5px 10px !important;  /* adjust padding for spacing */
+    padding: 8px 12px !important;       /* nice spacing inside box */
     margin: 0 !important;
-    background: none !important;
-    color: inherit !important;
+    background: #ffe6ea !important;     /* light pink background */
+    color: #333 !important;             /* dark text for readability */
     text-decoration: none !important;
-    font-size: 0.9em !important;    /* adjust font size */
+    font-size: 0.9em !important;
+    border-radius: 5px !important;      /* rounded corners */
+    transition: all 0.3s ease;          /* smooth hover */
 }
 
 /* Hover effect */
 .dropdown-content li a:hover {
-    color: #00adee !important;  /* match menu hover color */
-    background: none !important;
+    background: #ffc0cb !important;      /* slightly darker pink on hover */
+    color: #333 !important;             /* keep text dark */
 }
+
+
