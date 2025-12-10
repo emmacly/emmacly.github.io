@@ -4015,6 +4015,27 @@ section.wrapper.style5 .inner .scroll-gallery img {
     scroll-snap-align: start !important;
 }
 
+.gallery-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    padding: 20px 0;
+}
+
+.gallery-wrapper .scroll-gallery {
+    display: flex;
+    gap: 20px;
+    height: 280px; /* this sets the visible height */
+}
+
+.gallery-wrapper .scroll-gallery img {
+    height: 100%; /* fills the 280px height */
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+
+
 
 
 
