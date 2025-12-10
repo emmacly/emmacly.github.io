@@ -4033,12 +4033,17 @@ section.wrapper.style5 .inner .scroll-gallery img {
     object-fit: cover;
     flex-shrink: 0;
 }
-/* Hide the dropdown content by default */
+/* Dropdown container */
+.dropdown {
+    position: relative;
+}
+
+/* Hide dropdown content by default */
 .dropdown-content {
     display: none !important;
     list-style: none !important;
-    padding-left: 0 !important;
-    margin-top: 0 !important;
+    padding: 0 !important;     /* remove all padding */
+    margin: 0 !important;      /* remove all margin */
     background: none !important;
 }
 
@@ -4047,26 +4052,25 @@ section.wrapper.style5 .inner .scroll-gallery img {
     display: block !important;
 }
 
+/* Remove spacing from list items */
+.dropdown-content li {
+    margin: 0 !important;      
+    padding: 0 !important;     
+}
+
 /* Dropdown links styling */
 .dropdown-content li a {
     display: block !important;
-    padding: 5px 10px !important;   /* smaller padding for better spacing */
+    padding: 5px 10px !important;  /* adjust padding for spacing */
     margin: 0 !important;
     background: none !important;
-    color: inherit !important;      
+    color: inherit !important;
     text-decoration: none !important;
-    font-size: 0.9em !important;    /* slightly smaller font */
-}
-
-/* Optional: spacing between dropdown items */
-.dropdown-content li {
-    margin: 2px 0 !important;       
+    font-size: 0.9em !important;    /* adjust font size */
 }
 
 /* Hover effect */
 .dropdown-content li a:hover {
-    color: #00adee !important;      
+    color: #00adee !important;  /* match menu hover color */
     background: none !important;
 }
-
-
