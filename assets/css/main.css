@@ -4058,23 +4058,21 @@ section.wrapper.style5 .inner .scroll-gallery img {
     padding: 0 !important;
 }
 
-/* Dropdown links styling with light pink boxes */
+/* Dropdown links styling with smaller boxes */
 .dropdown-content li a {
     display: block !important;
-    padding: 8px 12px !important;       /* nice spacing inside box */
+    padding: 5px 10px !important;       /* smaller padding = smaller box */
     margin: 0 !important;
     background: #ffe6ea !important;     /* light pink background */
-    color: #333 !important;             /* dark text for readability */
+    color: #333 !important;             /* text color */
     text-decoration: none !important;
-    font-size: 0.9em !important;
-    border-radius: 5px !important;      /* rounded corners */
-    transition: all 0.3s ease;          /* smooth hover */
+    font-size: 0.8em !important;        /* smaller text */
+    border-radius: 5px !important;      
+    transition: all 0.3s ease;          
 }
 
 /* Hover effect */
 .dropdown-content li a:hover {
     background: #ffc0cb !important;      /* slightly darker pink on hover */
-    color: #333 !important;             /* keep text dark */
+    color: #333 !important;
 }
-
-
