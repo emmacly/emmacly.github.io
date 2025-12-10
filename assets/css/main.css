@@ -4007,10 +4007,11 @@ input, select, textarea {
 }
 
 .scroll-gallery img {
-    height: 280px;
+    height: 300px;
     border-radius: 8px;
     object-fit: cover;
     flex-shrink: 0;
     scroll-snap-align: start;
 }
+
 
