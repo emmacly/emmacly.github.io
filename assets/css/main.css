@@ -4038,7 +4038,8 @@ section.wrapper.style5 .inner .scroll-gallery img {
     display: none;
     list-style: none;
     padding-left: 0;
-    margin-top: 5px;
+    margin-top: 0;     /* remove extra spacing */
+    background: none;  /* remove box background */
 }
 
 /* Show dropdown on hover */
@@ -4046,24 +4047,19 @@ section.wrapper.style5 .inner .scroll-gallery img {
     display: block;
 }
 
-/* Optional styling */
+/* Make dropdown links match main menu style */
 .dropdown-content li a {
     display: block;
-    padding: 8px 12px;
-    background: #f4f4f4;
-    border-radius: 5px;
+    padding: 0;       /* remove extra padding */
+    margin: 0;        /* remove extra margin */
+    background: none; /* remove background box */
+    color: inherit;   /* inherit menu text color */
     text-decoration: none;
-    color: #333;
-    margin-bottom: 3px;
+    font-size: 1em;   /* match main menu text */
 }
 
+/* Optional: hover effect same as main menu */
 .dropdown-content li a:hover {
-    background: #ddd;
+    color: #00adee; /* change to your menu hover color */
+    background: none;
 }
-
-
-
-
-
-
-
