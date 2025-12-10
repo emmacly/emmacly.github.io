@@ -4001,17 +4001,19 @@ input, select, textarea {
 .scroll-gallery {
     display: flex;
     overflow-x: auto;
-    gap: 15px;
-    padding-bottom: 10px;
+    gap: 20px;
+    padding: 15px 0;
     scroll-snap-type: x mandatory;
+    height: 280px; /* set the container height */
 }
 
 .scroll-gallery img {
-    height: 300px;
+    height: 100%; /* fill the container height */
     border-radius: 8px;
     object-fit: cover;
     flex-shrink: 0;
     scroll-snap-align: start;
 }
+
 
 
