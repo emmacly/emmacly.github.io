@@ -4083,11 +4083,18 @@ section.wrapper.style5 .inner .scroll-gallery img {
     display: block !important;
 }
 
+.inner details {
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
 .inner details summary {
   background-color: #ff99b6; /* pink header */
-  color: white; /* header text is now white */
+  color: white; /* dark text */
   font-weight: 700;
-  font-size: 1.25rem; /* slightly larger */
+  font-size: 1.25rem;
   padding: 1rem 1.2rem;
   cursor: pointer;
   list-style: none;
@@ -4096,19 +4103,17 @@ section.wrapper.style5 .inner .scroll-gallery img {
 }
 
 .inner details summary:hover {
-  background-color: #ff6699; /* slightly darker pink on hover */
+  background-color: #ff6699;
 }
 
-/* Remove default triangle */
 .inner details summary::-webkit-details-marker {
   display: none;
 }
 
-/* Body text stays dark */
 .inner details p {
   padding: 0.8rem 1rem;
   margin: 0;
-  background-color: #ffe6ea; /* light pink body */
-  color: #1d242a; /* dark text */
+  background-color: #ffe6ea;
+  color: #1d242a;
   font-size: 0.95rem;
 }
