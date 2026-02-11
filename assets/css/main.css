@@ -4083,3 +4083,53 @@ section.wrapper.style5 .inner .scroll-gallery img {
     display: block !important;
 }
 
+/* Teaching Quality Standards collapsible cards */
+.outcomes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.outcome-card {
+  background-color: #f5f8ff;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+.outcome-card[open] {
+  background-color: #e1edff;
+}
+
+.outcome-card summary {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  list-style: none;
+}
+
+.outcome-card summary h3 {
+  margin: 0 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.outcome-card .number {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.outcome-card p {
+  margin-top: 0.8rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Remove default triangle marker */
+.outcome-card summary::-webkit-details-marker {
+  display: none;
+}
+
+
