@@ -4089,42 +4089,49 @@ section.wrapper.style5 .inner .scroll-gallery img {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .outcome-card {
-  background-color: #f5f8ff;
+  background-color: #ffe6f0; /* light pink card body */
   border-radius: 10px;
-  padding: 1rem 1.5rem;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+  overflow: hidden;
 }
 
 .outcome-card[open] {
-  background-color: #e1edff;
+  background-color: #ffd6eb; /* slightly darker pink when expanded */
 }
 
 .outcome-card summary {
-  display: flex;
-  align-items: center;
+  display: block;
+  background-color: #ff4da6; /* bright pink header */
+  color: white;
+  font-weight: 600;
+  padding: 0.8rem 1rem;
   cursor: pointer;
+  border-radius: 10px 10px 0 0; /* round top corners */
   list-style: none;
 }
 
-.outcome-card summary h3 {
-  margin: 0 0 0 0.5rem;
-  font-size: 1rem;
+.outcome-card summary:hover {
+  background-color: #ff3399; /* darker pink on hover */
 }
 
-.outcome-card .number {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #007bff;
+.outcome-card summary h3 {
+  margin: 0;
+  font-size: 1.1rem;
 }
 
 .outcome-card p {
-  margin-top: 0.8rem;
+  padding: 0.8rem 1rem;
+  margin: 0;
   font-size: 0.95rem;
   color: #333;
+  background-color: #ffe6f0; /* matches card body */
 }
 
 /* Remove default triangle marker */
