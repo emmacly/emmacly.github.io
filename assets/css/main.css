@@ -4083,67 +4083,40 @@ section.wrapper.style5 .inner .scroll-gallery img {
     display: block !important;
 }
 
-/* Teaching Quality Standards collapsible cards */
-.outcomes-grid {
-  display: grid !important;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
-  gap: 1.5rem !important;
-  margin-top: 2rem !important;
-  max-width: 1000px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
+.inner details {
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-.outcome-card {
-  background-color: #ffe6ea !important; /* light pink card body matches your theme */
-  border-radius: 10px !important;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1) !important;
-  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s !important;
-  overflow: hidden !important;
+.inner details summary {
+  background-color: #ff99b6; /* pink header */
+  color: #1d242a; /* dark text */
+  font-weight: 700;
+  font-size: 1.25rem;
+  padding: 1rem 1.2rem;
+  cursor: pointer;
+  list-style: none;
+  border-radius: 10px 10px 0 0;
+  transition: background-color 0.2s, transform 0.2s;
 }
 
-.outcome-card[open] {
-  background-color: #ffc0cb !important; /* slightly darker pink when expanded */
+.inner details summary:hover {
+  background-color: #ff6699;
 }
 
-.outcome-card summary {
-  display: block !important;
-  background-color: #ff99b6 !important; /* darker pink header for contrast */
-  color: white !important;
-  font-weight: 600 !important;
-  padding: 0.8rem 1rem !important;
-  cursor: pointer !important;
-  border-radius: 10px 10px 0 0 !important; /* round top corners */
-  list-style: none !important;
+.inner details summary::-webkit-details-marker {
+  display: none;
 }
 
-.outcome-card summary:hover {
-  background-color: #ff6699 !important; /* slightly darker on hover */
+.inner details p {
+  padding: 0.8rem 1rem;
+  margin: 0;
+  background-color: #ffe6ea;
+  color: #1d242a;
+  font-size: 0.95rem;
 }
-
-.outcome-card summary h3 {
-  margin: 0 !important;
-  font-size: 1.1rem !important;
-}
-
-.outcome-card p {
-  padding: 0.8rem 1rem !important;
-  margin: 0 !important;
-  font-size: 0.95rem !important;
-  color: #333 !important;
-  background-color: #ffe6ea !important; /* matches card body */
-}
-
-/* Remove default triangle marker */
-.outcome-card summary::-webkit-details-marker {
-  display: none !important;
-}
-/* Make collapsible card headers white */
-.outcome-card summary h3 {
-  color: white !important;
-}
-
-
 
 
 
