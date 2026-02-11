@@ -4108,7 +4108,7 @@ section.wrapper.style5 .inner .scroll-gallery img {
 
 .outcome-card summary {
   display: block !important;
-  background-color: #ffc0cb !important; /* bright pink header matches hover pink */
+  background-color: #ff99b6 !important; /* darker pink header for contrast */
   color: white !important;
   font-weight: 600 !important;
   padding: 0.8rem 1rem !important;
@@ -4118,7 +4118,7 @@ section.wrapper.style5 .inner .scroll-gallery img {
 }
 
 .outcome-card summary:hover {
-  background-color: #ff99b6 !important; /* slightly darker on hover */
+  background-color: #ff6699 !important; /* slightly darker on hover */
 }
 
 .outcome-card summary h3 {
@@ -4142,6 +4142,7 @@ section.wrapper.style5 .inner .scroll-gallery img {
 .outcome-card summary h3 {
   color: white !important;
 }
+
 
 
 
