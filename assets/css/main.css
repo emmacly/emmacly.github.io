@@ -4138,6 +4138,11 @@ section.wrapper.style5 .inner .scroll-gallery img {
 .outcome-card summary::-webkit-details-marker {
   display: none !important;
 }
+/* Make collapsible card headers white */
+.outcome-card summary h3 {
+  color: white !important;
+}
+
 
 
 
