@@ -4117,3 +4117,10 @@ section.wrapper.style5 .inner .scroll-gallery img {
   color: #1d242a;
   font-size: 0.95rem;
 }
+
+.role-meta {
+  font-weight: 500;
+  color: #666;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
